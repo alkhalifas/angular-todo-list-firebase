@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <i class="fas fa-2x fa-list-alt mr-2"></i>
+  <a class="navbar-brand" href="#">Angular Todo Application</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+       <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" routerLink="contact">Contact</a>
+     </li>
+   </ul>
+   <div class="my-2 my-lg-0">
+     <div ngbDropdown class="d-inline-block">
+       <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{ user.email }}</button>
+       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+         <button ngbDropdownItem (click)="logout()">Logout</button>
+       </div>
+     </div>
+   </div>
+ </div>
+</nav>

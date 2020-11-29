@@ -1,0 +1,33 @@
+<div class="example-container">
+ <span class="center">ToDo App</span>
+ <ng-container *ngIf="errorMessage">
+   <span class="error">{{errorMessage}}</span>
+ </ng-container>
+
+ <form [formGroup]="loginForm">
+   <div class="form-group">
+     <label for="title">Username*</label>
+     <input type="text" id="email" placeholder="Username" class="form-control" formControlName="email" />
+     <span style="color:Red;"
+       >Username is
+       required.</span>
+   </div>
+
+   <div class="form-group">
+     <label for="description">Password*</label>
+     <input id="password" type="password" placeholder="Password" class="form-control" formControlName="password" />
+     <span style="color:Red;"
+       >Password is
+       required.</span>
+   </div>
+
+   <div class="buttons-container center">
+     <button class="btn btn-primary" (click)="signIn()">
+       Log in
+     </button>
+     <button class="btn btn-success" (click)="createUser()">
+       Create Account
+     </button>
+   </div>
+ </form>
+</div>

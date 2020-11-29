@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "angular-todo-list-firebase"
+  "defaultProject": "angular-todo-list-firebase",
+  "cli": {
+    "analytics": "695cdcae-37b2-4ede-abf6-a41c2b1772d1"
+  }
 }
