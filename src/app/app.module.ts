@@ -12,8 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { TodoFormComponent } from './todo/todo-form/todo-form.component';
 import { MenuComponent } from './menu/menu.component';
-import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +21,8 @@ import { LoginComponent } from './login/login.component';
     TodoListComponent,
     TodoFormComponent,
     MenuComponent,
-    ContactComponent,
     LoginComponent,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,

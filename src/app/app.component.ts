@@ -8,14 +8,14 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   user: User;
 
   constructor(private afAuth: AngularFireAuth,
               private router: Router,
               private ngZone: NgZone){
     afAuth.authState.subscribe(auth => {
-      if(auth) {
+      if (auth) {
         console.log('logged in');
       } else {
         console.log('not logged in');

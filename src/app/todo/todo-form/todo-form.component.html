@@ -1,5 +1,5 @@
 <div class="modal-header">
- <h2 class="modal-title">{{createMode ? 'Agregar Item' : 'Modificar Item'}}</h2>
+ <h2 class="modal-title">{{createMode ? 'Add New Item' : 'Edit Item'}}</h2>
 
  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
    <span aria-hidden="true">&times;</span>
@@ -22,7 +22,7 @@
    <div class="form-check">
      <input class="form-check-input" type="checkbox" value="" id="done" formControlName="done">
      <label class="form-check-label" for="done">
-       Hecho
+       Status
      </label>
    </div>
  </form>

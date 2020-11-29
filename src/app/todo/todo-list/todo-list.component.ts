@@ -9,13 +9,13 @@ import { AngularFireAuth } from '@angular/fire/auth';
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.scss']
+  styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
 
   user: User;
 
-  constructor(private todoService: TodoService, 
+  constructor(private todoService: TodoService,
     private modalService: NgbModal,
     private afAuth: AngularFireAuth) { }
 
@@ -25,7 +25,7 @@ export class TodoListComponent implements OnInit {
         this.loadTodos(user.uid);
       }
     })
-    
+
   }
 
   clickAddTodo() {
@@ -34,7 +34,7 @@ export class TodoListComponent implements OnInit {
       this.handleModalTodoFormClose.bind(this),
        this.handleModalTodoFormClose.bind(this));
   }
-  
+
   handleModalTodoFormClose(response) {
     // is response an object?
     if (response === Object(response)) {
